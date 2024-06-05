@@ -1,0 +1,520 @@
+@charset "utf-8";
+@import url(http://fonts.googleapis.com/earlyaccess/cwtexyen.css);
+*{
+    font-family: 'cwTeXYen', sans-serif;
+}
+body {
+    
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+header {
+    background: linear-gradient(#e66465, #9198e5);
+    color: #f9f76c;
+    text-align: center;
+    padding: 1px 0;
+    letter-spacing: 2px;
+}
+
+nav {
+    background-color: #ffffff;
+    
+    text-align: center;
+    padding: 1rem 0;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav a {
+    color: #d21818;
+    text-decoration: none;
+    margin: 0 1rem;
+    transition: color 0.3s ease;
+    transition: transform 0.3s ease;
+}
+
+nav a:hover {
+    color: #ff9900;
+    transform: translateY(-5px);
+}
+
+/*<!--登入按鈕-->*/
+nav .btnLogin-popup{
+    width: 100px;
+    height: 25px;
+    background-color: transparent ;
+    border: 2px solid #d21818;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1em;
+    color: #d21818;
+    font-weight: 500;
+    transition: 0.5s;
+    position:absolute;
+    right:20px;
+    top:10px;    
+}
+
+nav .btnLogin-popup:hover{
+    background-color: #d21818;
+    color:#fff;
+}
+/*<!--登入介面-->*/
+.wrapper{
+    position: relative;
+    width: 400px;
+    height: 500px;
+    
+    background: transparent;
+    border: 2px solid rgba(255,255,255,.5);
+    border-radius: 20px;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 30px rgba(0,0,0,0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    transform: scale(0);
+    transition:transform .5s ease, height .2s ease;
+}
+.wrapper.active-popup{
+    transform: scale(1);
+    position: absolute;
+    top: 15%;
+    left:50%;
+    transform: translateX(-50%);
+}
+.wrapper.active{
+    height: 520px;
+}
+
+.wrapper .form-box{
+    width: 100%;
+    padding: 40px;
+}
+.wrapper .login{
+    position:absolute;
+    transition: transform 0.18s ease;
+    transform: translateX(0);
+}
+.wrapper.active .login{
+    position:absolute;
+    transition:none;
+    transform: translateX(-500px);
+}
+
+.wrapper .register{
+    position:absolute;
+    transform: translateX(500px);
+    
+}
+.wrapper.active .register{
+    position:absolute;
+    transform: translateX(0);
+    transition: transform 0.18s ease;    
+}
+
+.wrapper .icon-close{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 45px;
+    height: 45px;
+    background-color: #162938;
+    font-size: 2em;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom-left-radius: 20px;
+    z-index: 1;
+    cursor:pointer;
+}
+
+
+
+.form-box h2{
+    font-size: 2em;
+    color: #162938;
+    text-align: center;
+}
+.input-box{
+    position:relative;
+    width: 100%;
+    height: 50px;
+    border-bottom: 2px solid #162938 ;
+    margin: 30px 0;
+}
+.input-box label{
+    position: absolute;
+    top:0;
+    left: 0px;
+    border: none;
+    font-size: 1em;
+    color:#162938;
+    font-weight: 500;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.input-box input{
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    color: #162938;
+    font-weight: 600;
+}
+.input-box .icon{
+    position:absolute;
+    right: 8px;
+    font-size: 1.2em;
+    color:#162938;
+    line-height: 57px;
+}
+.remember-forget{
+    font-size: .9em;
+    color:#162938;
+    font-weight: 500;
+    margin: 15px 0 15px;
+    display: flex;
+    justify-content: space-between;
+
+}
+.remember-forget label input{
+    accent-color: #162938;
+    margin-right: 3px;
+}
+.remember-forget a{
+    text-decoration: none;
+    color:#162938
+}
+.remember-forget a:hover{
+    text-decoration: underline;
+}
+.btn{
+    width: 100%;
+    height: 45px;
+    background: #162938;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    cursor:pointer; 
+    font-size: 1em;
+    color: #fff;
+    font-weight: 500;
+}
+.login-register{
+    font-size: .9em;
+    color: #162938;
+    text-align: center;
+    font-weight: 500;
+    margin: 25px 0 10px;
+}
+.login-register p a{
+    color: #162938;
+    text-decoration: none;
+    font-weight: 600;
+}
+.login-register p a:hover{
+    text-decoration: underline;
+}
+/*<!--登入介面-->*/
+
+footer {
+    background: linear-gradient(#e66465, #9198e5);
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+
+.homepage{    
+    width:100px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    line-height: 40px;
+    color: #000;
+    background-color: transparent;
+    position: relative;
+    top: -20px;
+    transition: all .3s linear;
+    text-decoration: none; 
+    font-size: large;
+    font-weight: bold;   
+}
+.homepage:before{
+    content: "";
+    width: 20px;
+    height: 20px;
+    display: block;
+    box-sizing: border-box;
+    border-top: 1px solid #000;
+    border-left: 1px solid #000;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all .3s linear;
+}
+.homepage:after{
+    content: "";
+    width: 20px;
+    height: 20px;
+    display: block;
+    box-sizing: border-box;
+    border-bottom: 1px solid #000;
+    border-right: 1px solid #000;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    transition: all .3s ease;
+}
+.homepage:hover:before,
+.homepage:hover:after{
+    width: 100%;
+    height: 100%;
+}
+
+
+/*<!--內容開始-->*/
+.container {
+    max-width: 1200px;
+    min-height: 600px;
+    margin-top: 10px;
+    margin: 10 auto;
+    padding: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-direction: row;
+    
+}
+.checkoutLayout{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap:50px;
+    padding:20px;
+}
+.checkoutLayout .down{
+    width:200px;
+    height: 130px;
+    background-color:#5358b3;
+    border-radius: 20px;
+    padding: 40px;
+    color: #fff;
+}
+
+/*.checkoutLayout .list img{
+    height: 90px;
+}*/
+.checkoutLayout .row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.checkoutLayout .row div:nth-child(2){
+    font-weight: bold;
+    font-size: x-large;
+}
+
+.buttonCheckout{
+    width: 100%;
+    height: 30%;
+    border: none;
+    border-radius: 20px;
+    margin-top: 20px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #49d8b9;
+}
+
+
+
+.returnCart .list .item img{
+   height:  80px;
+}
+.returnCart .item{
+    display: grid;
+    grid-template-columns: 80px 1fr 50px 80px;
+    align-items: center;
+    gap: 70px;
+    margin-bottom: 30px;
+    padding: 0 10px;
+    box-shadow: 0 10px 20px #555;
+    border-radius: 20px;
+}
+
+.returnCart .item .name,
+.returnCart .item .returnPric{
+    font-size: x-large;
+    font-weight: bold;
+}
+
+
+/* TK區 */
+
+.orderContent_TK,
+.paymentInformation_TK,
+.orderDetails_TK {
+    padding: 15px;
+    width: 30%;
+    /* height: 100%; */
+    background-color: #d84949;
+}
+
+.title_TK {
+    font-size: 26px;
+    font-weight: bolder;
+}
+
+.divider_TK {
+    position: relative;
+    width: 100%;
+    height: 2px;
+    margin: 15px 0 30px 0;
+    border-top: 1.5px solid rgb(0, 0, 0); /* 加一條灰色的上邊框作為分隔線 */
+}
+
+/* ting區 */
+.container_ting{
+    display: flex;
+    justify-content: space-between;
+}
+/* aside_ting */
+.aside_ting{
+    width: 30%;
+    background-color: #80f5db;
+    height: 1060px;
+        
+   
+}
+.side_bar_title_ting{
+    font-size: 2rem;
+    font-weight: bolder;
+    text-align:center;
+    padding: 1.5rem;
+    margin:  0;
+    color: rgb(102, 16, 200);
+    background-color: #9abae3;
+    border-bottom:  1.5px solid rgb(0, 0, 0);
+    
+}
+.side_bar_ul_ting{
+    
+    font-size: 1.5rem;
+}
+.side_bar_ul_ting li{
+    margin: 1rem;
+    list-style-type: none; 
+}
+.side_bar_ul_ting li a{
+    text-decoration: none;
+}
+.side_bar_ul_ting li a:hover{
+    
+    border-bottom: 3px solid rgb(212, 130, 24);
+}
+
+/* main_ting */
+.main_ting{
+    width: 70%;
+    height: 1000px;
+    background-color: #e3a4d5;
+    padding: 30px;
+    font-size: 1.2rem;
+}
+.main_ting h1{
+    text-align: center;
+}
+.main_ting input{
+    font-size: 1.2rem;
+}
+.main_div_ting{
+    display: flex;
+    justify-content: space-around;
+}
+.atricle_points_ting{
+    display: flex;
+    justify-content: space-around;
+  
+}
+
+.points_p_ting{
+    
+    margin: 20px;
+    font-size : 3rem;
+    text-align: right;
+    font-weight: bolder;
+}
+.points_ting a{
+    text-decoration: none;
+}
+
+
+/* combobox區 */
+.fieldset_ting{
+    font-size: 1.2rem;
+}
+#city,
+#district{
+    font-size: 1.2rem;
+}
+
+/* 隱藏修改會員資料區 */
+#ting_member_alterinfo{
+	display: none;
+}
+
+/* 按扭區 */
+#modify_member_info,
+#modify_member_passwd,
+#cancel_modify_member_info,
+#confirm_modify{
+    border:0;
+    background-color:#4270bc;
+    color:#fff;
+    border-radius:10px;
+    cursor:pointer;
+    width: 160px;
+    height: 50px;
+    font-size: 1.2rem;
+}
+  
+#modify_member_info:hover,
+#modify_member_passwd:hover,
+#cancel_modify_member_info:hover,
+#confirm_modify:hover{
+    color:#4270bc;
+    background-color:#fff;
+    border:2px #4270bc solid;
+  }
+
+/* 點數區 */
+.points_ting{
+    background-color: #fdd4b5;
+    width: 100%;
+    height: 150px;
+    font-size: 1.2rem;
+    color: #411d9a;
+    border: 1px #e7daca solid;
+    border-radius: 20px;
+    margin: 0px 0px 7px 0px;
+    box-shadow: 5px 5px 10px gray;
+    padding: 20px;
+    background: linear-gradient(to right,#e7daca,#ffc987);
+}
+.points_ting h2{
+    margin: 0;
+    border-bottom: 1px black solid;
+}

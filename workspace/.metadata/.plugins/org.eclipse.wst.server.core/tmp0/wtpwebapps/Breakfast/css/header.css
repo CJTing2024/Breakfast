@@ -1,0 +1,14 @@
+/* CSS樣式 */
+
+a.open-button {
+    color: #d21818;
+    text-decoration: none;
+    margin: 0 1rem;
+    transition: color 0.3s ease;
+    transition: transform 0.3s ease;
+}
+
+a.open-button:hover {
+    color: #ff9900;
+    transform: translateY(-5px);
+}

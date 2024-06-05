@@ -1,0 +1,45 @@
+@charset "utf-8";
+ 
+nav .ting-login-in{
+	display: none;
+}
+nav .ting-login-in a{
+    width: 100px;
+    height: 25px;
+    position:absolute;
+    font-size: 1.2rem;
+    color: black;   
+}
+nav .ting-login-in a:hover{
+    color: rgb(89, 28, 146);
+}
+nav .ting-login-in a:nth-child(1){
+    right:150px;
+    top:10px;  
+}   
+/* 登出 */
+nav .ting-login-in a:nth-child(3){
+    width: 50px;
+    right:40px;
+    top:10px;
+   
+}
+
+nav .ting-login-in span{
+    width: 50px;
+    height: 25px;
+    position:absolute;
+    right:120px;
+    top:10px;
+    font-size: 1.2rem;
+}
+nav .ting-login-in button{
+    width: 50px;
+    height: 25px;
+    position:absolute;
+    right:50px;
+    top:10px;
+    font-size: 1.2rem;
+    background-color: bisque;
+     
+}

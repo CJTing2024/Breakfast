@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./css/style.css" rel="stylesheet">
+    <title>早午餐店</title>
+</head>
+<body>
+    <header>
+        <h1>神風餐廳-brunch  </h1>
+    </header>
+    
+    <nav>
+        <a href="#">首頁</a>
+        <a href="activity.html">特別活動</a>
+        <a href="menu.html">美味菜單</a>
+        <a href="branchmap.html">門市據點</a>
+        <a href="feedback.html">聯絡我們</a>
+        <button class="btnLogin-popup">登入 Login</button>
+    </nav>
+
+
+    <div class="container">
+        <div class="menu-item">
+            <h2>霸氣早晨炫風早餐</h2>
+            <p>新鮮蔬菜、火腿和起司，夾在酥脆的麵包中。</p>
+            <p>價格：$5.99</p>
+        </div>
+
+
+        <div class="menu-item">
+            <h2>咖啡火箭能量燃早</h2>
+            <p>煎蛋、培根、香腸、烤土豆和吐司。</p>
+            <p>價格：$8.99</p>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2023 神風早午餐店. All rights reserved.</p>
+    </footer>
+
+    <!--登入介面-->
+    <div class="wrapper">
+        <span class="icon-close">
+            <ion-icon name="close"></ion-icon>
+        </span>
+
+        <div class="form-box login">
+            <h2>Login登入</h2>
+            <form action="#">
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="mail-outline"></ion-icon></span>
+                    <input type="email" required>
+                    <label>信箱Email</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="lock-closed-outline"></ion-icon></span>
+                    <input type="password" required>
+                    <label>密碼Password</label>
+                </div>
+                <div class="remember-forget">
+                    <label ><input type="checkbox">記住帳號</label>
+                    <a href="#">Forget Password?</a>
+                </div>
+                <button type="submit" class="btn">登入 Login</button>
+                <div class="login-register">
+                    <p>申請帳號
+                    <a 
+                    href="#"
+                    class="register-link">Register</a>
+                    </p>
+                    
+                </div>
+
+            </form>
+        </div>
+        <div class="form-box register">
+            <h2>Registration註冊</h2>
+            <form action="#">
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="person-add-outline"></ion-icon></span>
+                    <input type="text" required>
+                    <label>暱稱Username</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="mail-outline"></ion-icon></span>
+                    <input type="email" required>
+                    <label>信箱Email</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="lock-closed-outline"></ion-icon></span>
+                    <input type="password" required>
+                    <label>密碼Password</label>
+                </div>
+                <div class="remember-forget">
+                    <label ><input type="checkbox">I agree to the terms & conditions</label>
+                    
+                </div>
+                <button type="submit" class="btn">登入 Login</button>
+                <div class="login-register">
+                    <p>已有帳號
+                    <a 
+                    href="#"
+                    class="login-link">Login</a>
+                    </p>
+                    
+                </div>
+
+            </form>
+        </div>
+    </div>
+    <script src="./js/email.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <!--登入介面-->
+    
+</body>
+</html>

@@ -1,0 +1,18 @@
+@charset "utf-8";
+#T_fixed_customer_service_img {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    z-index: 5;
+}   
+#T_fixed_customer_service_img img{
+    width: 100px;
+}
+.T_fixed_customer_service{
+    display: none;
+    position: fixed;
+    bottom: 50px;
+    right: 120px;
+    z-index: 5;
+    width: 400px;
+}

@@ -1,0 +1,59 @@
+
+9月 26, 2023 15:15:29.20 NEW SESSION
+9月 26, 2023 15:15:29.20 [ERROR webrender_bindings::program_cache] shader-cache: Shader disk cache is not supported
+9月 26, 2023 15:15:29.21 [GFX1-]: shader-cache: Shader disk cache is not supported
+
+10月 24, 2023 16:08:23.283 NEW SESSION
+10月 24, 2023 16:08:23.283 [19560:17516:1024/160823.280:ERROR:device_event_log_impl.cc(225)] [16:08:23.281] USB: usb_service_win.cc:415 Could not read device interface GUIDs: 系統找不到指定的檔案。 (0x2)
+10月 24, 2023 16:09:27.602 [17164:14964:1024/160927.601:ERROR:device_event_log_impl.cc(225)] [16:09:27.601] USB: usb_service_win.cc:415 Could not read device interface GUIDs: 系統找不到指定的檔案。 (0x2)
+10月 24, 2023 16:12:35.253 [17260:9092:1024/161235.252:ERROR:device_event_log_impl.cc(225)] [16:12:35.253] USB: usb_service_win.cc:415 Could not read device interface GUIDs: 系統找不到指定的檔案。 (0x2)
+10月 24, 2023 16:13:56.712 [18316:9932:1024/161356.712:ERROR:device_event_log_impl.cc(225)] [16:13:56.711] USB: usb_service_win.cc:415 Could not read device interface GUIDs: 系統找不到指定的檔案。 (0x2)
+10月 24, 2023 16:14:04.827 [16920:13820:1024/161404.827:ERROR:device_event_log_impl.cc(225)] [16:14:04.827] USB: usb_service_win.cc:415 Could not read device interface GUIDs: 系統找不到指定的檔案。 (0x2)
+10月 24, 2023 16:14:14.674 [19600:18584:1024/161414.673:ERROR:device_event_log_impl.cc(225)] [16:14:14.670] USB: usb_service_win.cc:415 Could not read device interface GUIDs: 系統找不到指定的檔案。 (0x2)
+10月 24, 2023 16:14:29.776 [12032:19484:1024/161429.776:ERROR:device_event_log_impl.cc(225)] [16:14:29.775] USB: usb_service_win.cc:415 Could not read device interface GUIDs: 系統找不到指定的檔案。 (0x2)
+10月 24, 2023 16:15:17.649 [18164:14668:1024/161517.649:ERROR:device_event_log_impl.cc(225)] [16:15:17.649] USB: usb_service_win.cc:415 Could not read device interface GUIDs: 系統找不到指定的檔案。 (0x2)
+10月 24, 2023 16:17:34.271 [17828:16820:1024/161734.270:ERROR:device_event_log_impl.cc(225)] [16:17:34.271] USB: usb_service_win.cc:415 Could not read device interface GUIDs: 系統找不到指定的檔案。 (0x2)
+10月 24, 2023 16:18:07.467 [20188:16276:1024/161807.467:ERROR:device_event_log_impl.cc(225)] [16:18:07.466] USB: usb_service_win.cc:415 Could not read device interface GUIDs: 系統找不到指定的檔案。 (0x2)
+10月 24, 2023 16:19:33.68 [18120:2864:1024/161933.067:ERROR:device_event_log_impl.cc(225)] [16:19:33.067] USB: usb_service_win.cc:415 Could not read device interface GUIDs: 系統找不到指定的檔案。 (0x2)
+10月 24, 2023 16:21:28.743 [18480:17492:1024/162128.743:ERROR:device_event_log_impl.cc(225)] [16:21:28.743] USB: usb_service_win.cc:415 Could not read device interface GUIDs: 系統找不到指定的檔案。 (0x2)
+10月 24, 2023 16:23:16.657 [18896:4064:1024/162316.657:ERROR:device_event_log_impl.cc(225)] [16:23:16.657] USB: usb_service_win.cc:415 Could not read device interface GUIDs: 系統找不到指定的檔案。 (0x2)
+10月 24, 2023 16:25:04.652 [19064:11832:1024/162504.652:ERROR:device_event_log_impl.cc(225)] [16:25:04.652] USB: usb_service_win.cc:415 Could not read device interface GUIDs: 系統找不到指定的檔案。 (0x2)
+10月 24, 2023 16:27:06.962 [8612:18136:1024/162706.961:ERROR:device_event_log_impl.cc(225)] [16:27:06.960] USB: usb_service_win.cc:415 Could not read device interface GUIDs: 系統找不到指定的檔案。 (0x2)
+10月 24, 2023 16:28:31.204 [6280:16320:1024/162831.204:ERROR:device_event_log_impl.cc(225)] [16:28:31.204] USB: usb_service_win.cc:415 Could not read device interface GUIDs: 系統找不到指定的檔案。 (0x2)
+
+10月 26, 2023 08:25:56.688 NEW SESSION
+10月 26, 2023 08:25:56.688 [4208:14852:1026/082556.686:ERROR:device_event_log_impl.cc(225)] [08:25:56.686] USB: usb_service_win.cc:415 Could not read device interface GUIDs: 系統找不到指定的檔案。 (0x2)
+
+11月 09, 2023 10:01:49.721 NEW SESSION
+11月 09, 2023 10:01:49.721 [GFX1-]: DCompositionSurface::BeginDraw failed: 0x80070057 Rect(x=525312, y=524288, w=0, h=0)
+11月 09, 2023 10:01:49.721 [GFX1-]: Handling webrender error 4
+11月 09, 2023 10:01:49.770 [GFX1-]: CompositorBridgeChild receives IPC close with reason=AbnormalShutdown
+11月 09, 2023 10:01:49.775 [GFX1-]: CompositorBridgeChild receives IPC close with reason=AbnormalShutdown
+11月 09, 2023 10:01:49.775 [GFX1-]: CompositorBridgeChild receives IPC close with reason=AbnormalShutdown
+11月 09, 2023 10:01:49.775 [GFX1-]: CompositorBridgeChild receives IPC close with reason=AbnormalShutdown
+11月 09, 2023 10:01:49.775 [GFX1-]: CompositorBridgeChild receives IPC close with reason=AbnormalShutdown
+11月 09, 2023 10:01:49.775 [Parent 8448, Main Thread] WARNING: base::KillProcess refusing to terminate process handle 0: file /builds/worker/checkouts/gecko/ipc/chromium/src/base/process_util_win.cc:349
+11月 09, 2023 10:01:49.784 [GFX1-]: CompositorBridgeChild receives IPC close with reason=AbnormalShutdown
+11月 09, 2023 10:01:49.784 [GFX1-]: CompositorBridgeChild receives IPC close with reason=AbnormalShutdown
+11月 09, 2023 10:01:49.806 [GFX1-]: CompositorBridgeChild receives IPC close with reason=AbnormalShutdown
+
+11月 10, 2023 14:58:28.666 NEW SESSION
+11月 10, 2023 14:58:28.667 [16396:7388:1110/145828.664:ERROR:device_event_log_impl.cc(192)] [14:58:28.664] USB: usb_service_win.cc:415 Could not read device interface GUIDs: 系統找不到指定的檔案。 (0x2)
+11月 10, 2023 15:09:14.62 [7644:2196:1110/150914.062:ERROR:device_event_log_impl.cc(192)] [15:09:14.062] USB: usb_service_win.cc:415 Could not read device interface GUIDs: 系統找不到指定的檔案。 (0x2)
+
+11月 22, 2023 08:23:21.894 NEW SESSION
+11月 22, 2023 08:23:21.894 [11220:5728:1122/082321.889:ERROR:device_event_log_impl.cc(192)] [08:23:21.889] USB: usb_service_win.cc:415 Could not read device interface GUIDs: 系統找不到指定的檔案。 (0x2)
+11月 22, 2023 08:45:04.808 [11220:2504:1122/084504.807:ERROR:connection_factory_impl.cc(471)] ConnectionHandler failed with net error: -2
+11月 22, 2023 09:40:14.29 [15900:6276:1122/094014.026:ERROR:device_event_log_impl.cc(192)] [09:40:14.026] USB: usb_service_win.cc:415 Could not read device interface GUIDs: 系統找不到指定的檔案。 (0x2)
+11月 22, 2023 09:44:41.260 [15900:904:1122/094441.258:ERROR:connection_factory_impl.cc(471)] ConnectionHandler failed with net error: -2
+11月 22, 2023 10:03:54.644 [15900:904:1122/095014.153:ERROR:connection_factory_impl.cc(471)] ConnectionHandler failed with net error: -2
+11月 22, 2023 10:11:32.481 [15900:904:1122/101132.479:ERROR:connection_factory_impl.cc(471)] ConnectionHandler failed with net error: -2
+11月 22, 2023 10:21:51.145 [15900:904:1122/102151.143:ERROR:connection_factory_impl.cc(471)] ConnectionHandler failed with net error: -2
+11月 22, 2023 10:25:25.87 [15900:904:1122/102525.087:ERROR:connection_factory_impl.cc(471)] ConnectionHandler failed with net error: -2
+11月 22, 2023 10:29:55.193 [15900:904:1122/102955.192:ERROR:connection_factory_impl.cc(471)] ConnectionHandler failed with net error: -2
+11月 22, 2023 11:10:52.636 [15900:904:1122/111052.635:ERROR:connection_factory_impl.cc(471)] ConnectionHandler failed with net error: -2
+11月 22, 2023 12:39:17.753 [15900:904:1122/123917.753:ERROR:connection_factory_impl.cc(471)] ConnectionHandler failed with net error: -2
+11月 22, 2023 15:13:59.615 [2168:17296:1122/151359.615:ERROR:device_event_log_impl.cc(192)] [15:13:59.618] USB: usb_service_win.cc:415 Could not read device interface GUIDs: 系統找不到指定的檔案。 (0x2)
+
+11月 22, 2023 21:53:21.799 NEW SESSION
+11月 22, 2023 21:53:21.799 [ERROR bitsdownload::bits_interface::monitor] Unable to dispatch to thread: NS_ERROR_UNEXPECTED

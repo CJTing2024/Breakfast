@@ -1,0 +1,58 @@
+[
+    {
+        "id":2,
+        "window":"window2",
+        "name":"霸氣早晨炫風早餐",
+        "price": 5.99,
+        "image" : "./menu_img/Ham.png",
+        "discription":"Toast with Ham"
+    },
+    {
+        "id":3,
+        "window":"window3",
+        "name":"咖啡火箭能量燃早",
+        "price": 6.99,
+        "image" : "./menu_img/Bacon.png",
+        "discription":"Toast with Bacon"
+    },
+    {
+        "id":4,
+        "window":"window4",
+        "name":"金色日出極致早點",
+        "price": 7.99,
+        "image" : "./menu_img/Chop.png",
+        "discription":"Toast with Chop"
+    },
+    {
+        "id":5,
+        "window":"window5",
+        "name":"太空漫游早餐之旅",
+        "price": 8.99,
+        "image" : "./menu_img/CrispyC.png",
+        "discription":"Toast with Crispy"
+    },
+    {
+        "id":6,
+        "window":"window6",
+        "name":"活力動能炫酷餐",
+        "price": 9.99,
+        "image" : "./menu_img/Egg.png",
+        "discription":"Toast with Egg"
+    },
+    {
+        "id":7,
+        "window":"window7",
+        "name":"極光湧動美味時間",
+        "price": 10.99,
+        "image" : "./menu_img/Pork.png",
+        "discription":"Toast with Pork"
+    },
+    {
+        "id":8,
+        "window":"window8",
+        "name":"極光湧動美味時間",
+        "price": 11.99,
+        "image" : "./menu_img/SmokedC.png",
+        "discription":"Toast with SmokedC"
+    }
+]

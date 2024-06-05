@@ -1,0 +1,208 @@
+26-Sep-2023 00:08:14.601 嚴重 [main] org.apache.catalina.startup.Catalina.stopServer Could not contact [localhost:8005] (base port [8005] and offset [0]). Tomcat may not be running.
+26-Sep-2023 00:08:14.605 嚴重 [main] org.apache.catalina.startup.Catalina.stopServer Error stopping Catalina
+	java.net.ConnectException: Connection refused: connect
+		at java.net.DualStackPlainSocketImpl.connect0(Native Method)
+		at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:75)
+		at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:476)
+		at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:218)
+		at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:200)
+		at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:162)
+		at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:394)
+		at java.net.Socket.connect(Socket.java:606)
+		at java.net.Socket.connect(Socket.java:555)
+		at java.net.Socket.<init>(Socket.java:451)
+		at java.net.Socket.<init>(Socket.java:228)
+		at org.apache.catalina.startup.Catalina.stopServer(Catalina.java:513)
+		at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+		at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+		at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+		at java.lang.reflect.Method.invoke(Method.java:498)
+		at org.apache.catalina.startup.Bootstrap.stopServer(Bootstrap.java:389)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:479)
+26-Sep-2023 00:10:07.807 資訊 [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/9.0.31
+26-Sep-2023 00:10:07.810 資訊 [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Feb 5 2020 19:32:12 UTC
+26-Sep-2023 00:10:07.810 資訊 [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 9.0.31.0
+26-Sep-2023 00:10:07.811 資訊 [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 11
+26-Sep-2023 00:10:07.811 資訊 [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+26-Sep-2023 00:10:07.811 資訊 [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+26-Sep-2023 00:10:07.811 資訊 [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             C:\jdk8\jre
+26-Sep-2023 00:10:07.812 資訊 [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           1.8.0_361-b09
+26-Sep-2023 00:10:07.812 資訊 [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+26-Sep-2023 00:10:07.812 資訊 [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         C:\MyWeb\apache-tomcat-9.0.31
+26-Sep-2023 00:10:07.812 資訊 [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         C:\MyWeb\apache-tomcat-9.0.31
+26-Sep-2023 00:10:07.813 資訊 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=C:\MyWeb\apache-tomcat-9.0.31\conf\logging.properties
+26-Sep-2023 00:10:07.814 資訊 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+26-Sep-2023 00:10:07.814 資訊 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+26-Sep-2023 00:10:07.814 資訊 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+26-Sep-2023 00:10:07.815 資訊 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+26-Sep-2023 00:10:07.815 資訊 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=C:\MyWeb\apache-tomcat-9.0.31
+26-Sep-2023 00:10:07.815 資訊 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=C:\MyWeb\apache-tomcat-9.0.31
+26-Sep-2023 00:10:07.815 資訊 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=C:\MyWeb\apache-tomcat-9.0.31\temp
+26-Sep-2023 00:10:07.816 資訊 [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent Loaded APR based Apache Tomcat Native library [1.2.23] using APR version [1.7.0].
+26-Sep-2023 00:10:07.816 資訊 [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+26-Sep-2023 00:10:07.816 資訊 [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+26-Sep-2023 00:10:07.821 資訊 [main] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL successfully initialized [OpenSSL 1.1.1c  28 May 2019]
+26-Sep-2023 00:10:08.086 資訊 [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+26-Sep-2023 00:10:08.299 資訊 [main] org.apache.catalina.startup.Catalina.load Server initialization in [656] milliseconds
+26-Sep-2023 00:10:08.327 資訊 [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+26-Sep-2023 00:10:08.328 資訊 [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/9.0.31]
+26-Sep-2023 00:10:08.341 資訊 [main] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [C:\MyWeb\apache-tomcat-9.0.31\webapps\Test2.war]
+26-Sep-2023 00:10:08.530 資訊 [main] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [C:\MyWeb\apache-tomcat-9.0.31\webapps\Test2.war] has finished in [189] ms
+26-Sep-2023 00:10:08.532 資訊 [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\MyWeb\apache-tomcat-9.0.31\webapps\docs]
+26-Sep-2023 00:10:08.549 資訊 [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\MyWeb\apache-tomcat-9.0.31\webapps\docs] has finished in [17] ms
+26-Sep-2023 00:10:08.550 資訊 [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\MyWeb\apache-tomcat-9.0.31\webapps\examples]
+26-Sep-2023 00:10:08.790 資訊 [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\MyWeb\apache-tomcat-9.0.31\webapps\examples] has finished in [240] ms
+26-Sep-2023 00:10:08.791 資訊 [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\MyWeb\apache-tomcat-9.0.31\webapps\host-manager]
+26-Sep-2023 00:10:08.813 資訊 [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\MyWeb\apache-tomcat-9.0.31\webapps\host-manager] has finished in [22] ms
+26-Sep-2023 00:10:08.813 資訊 [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\MyWeb\apache-tomcat-9.0.31\webapps\manager]
+26-Sep-2023 00:10:08.838 資訊 [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\MyWeb\apache-tomcat-9.0.31\webapps\manager] has finished in [25] ms
+26-Sep-2023 00:10:08.839 資訊 [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\MyWeb\apache-tomcat-9.0.31\webapps\ROOT]
+26-Sep-2023 00:10:08.870 資訊 [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\MyWeb\apache-tomcat-9.0.31\webapps\ROOT] has finished in [31] ms
+26-Sep-2023 00:10:08.873 資訊 [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+26-Sep-2023 00:10:08.882 資訊 [main] org.apache.catalina.startup.Catalina.start Server startup in [581] milliseconds
+26-Sep-2023 00:12:20.041 嚴重 [main] org.apache.catalina.startup.Catalina.stopServer Could not contact [localhost:8005] (base port [8005] and offset [0]). Tomcat may not be running.
+26-Sep-2023 00:12:20.048 嚴重 [main] org.apache.catalina.startup.Catalina.stopServer Error stopping Catalina
+	java.net.ConnectException: Connection refused: connect
+		at java.net.DualStackPlainSocketImpl.connect0(Native Method)
+		at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:75)
+		at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:476)
+		at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:218)
+		at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:200)
+		at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:162)
+		at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:394)
+		at java.net.Socket.connect(Socket.java:606)
+		at java.net.Socket.connect(Socket.java:555)
+		at java.net.Socket.<init>(Socket.java:451)
+		at java.net.Socket.<init>(Socket.java:228)
+		at org.apache.catalina.startup.Catalina.stopServer(Catalina.java:513)
+		at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+		at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+		at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+		at java.lang.reflect.Method.invoke(Method.java:498)
+		at org.apache.catalina.startup.Bootstrap.stopServer(Bootstrap.java:389)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:479)
+26-Sep-2023 00:12:24.509 嚴重 [main] org.apache.catalina.startup.Catalina.stopServer Could not contact [localhost:8005] (base port [8005] and offset [0]). Tomcat may not be running.
+26-Sep-2023 00:12:24.512 嚴重 [main] org.apache.catalina.startup.Catalina.stopServer Error stopping Catalina
+	java.net.ConnectException: Connection refused: connect
+		at java.net.DualStackPlainSocketImpl.connect0(Native Method)
+		at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:75)
+		at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:476)
+		at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:218)
+		at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:200)
+		at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:162)
+		at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:394)
+		at java.net.Socket.connect(Socket.java:606)
+		at java.net.Socket.connect(Socket.java:555)
+		at java.net.Socket.<init>(Socket.java:451)
+		at java.net.Socket.<init>(Socket.java:228)
+		at org.apache.catalina.startup.Catalina.stopServer(Catalina.java:513)
+		at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+		at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+		at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+		at java.lang.reflect.Method.invoke(Method.java:498)
+		at org.apache.catalina.startup.Bootstrap.stopServer(Bootstrap.java:389)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:479)
+26-Sep-2023 00:12:27.107 資訊 [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/9.0.31
+26-Sep-2023 00:12:27.109 資訊 [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Feb 5 2020 19:32:12 UTC
+26-Sep-2023 00:12:27.109 資訊 [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 9.0.31.0
+26-Sep-2023 00:12:27.110 資訊 [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 11
+26-Sep-2023 00:12:27.110 資訊 [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+26-Sep-2023 00:12:27.110 資訊 [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+26-Sep-2023 00:12:27.111 資訊 [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             C:\jdk8\jre
+26-Sep-2023 00:12:27.111 資訊 [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           1.8.0_361-b09
+26-Sep-2023 00:12:27.111 資訊 [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+26-Sep-2023 00:12:27.111 資訊 [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         C:\MyWeb\apache-tomcat-9.0.31
+26-Sep-2023 00:12:27.111 資訊 [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         C:\MyWeb\apache-tomcat-9.0.31
+26-Sep-2023 00:12:27.113 資訊 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=C:\MyWeb\apache-tomcat-9.0.31\conf\logging.properties
+26-Sep-2023 00:12:27.113 資訊 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+26-Sep-2023 00:12:27.114 資訊 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+26-Sep-2023 00:12:27.114 資訊 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+26-Sep-2023 00:12:27.115 資訊 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+26-Sep-2023 00:12:27.115 資訊 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=C:\MyWeb\apache-tomcat-9.0.31
+26-Sep-2023 00:12:27.115 資訊 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=C:\MyWeb\apache-tomcat-9.0.31
+26-Sep-2023 00:12:27.115 資訊 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=C:\MyWeb\apache-tomcat-9.0.31\temp
+26-Sep-2023 00:12:27.116 資訊 [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent Loaded APR based Apache Tomcat Native library [1.2.23] using APR version [1.7.0].
+26-Sep-2023 00:12:27.116 資訊 [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+26-Sep-2023 00:12:27.116 資訊 [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+26-Sep-2023 00:12:27.120 資訊 [main] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL successfully initialized [OpenSSL 1.1.1c  28 May 2019]
+26-Sep-2023 00:12:27.366 資訊 [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+26-Sep-2023 00:12:27.583 資訊 [main] org.apache.catalina.startup.Catalina.load Server initialization in [635] milliseconds
+26-Sep-2023 00:12:27.604 資訊 [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+26-Sep-2023 00:12:27.604 資訊 [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/9.0.31]
+26-Sep-2023 00:12:27.616 資訊 [main] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [C:\MyWeb\apache-tomcat-9.0.31\webapps\Test2.war]
+26-Sep-2023 00:12:27.797 資訊 [main] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [C:\MyWeb\apache-tomcat-9.0.31\webapps\Test2.war] has finished in [181] ms
+26-Sep-2023 00:12:27.798 資訊 [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\MyWeb\apache-tomcat-9.0.31\webapps\docs]
+26-Sep-2023 00:12:27.814 資訊 [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\MyWeb\apache-tomcat-9.0.31\webapps\docs] has finished in [15] ms
+26-Sep-2023 00:12:27.814 資訊 [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\MyWeb\apache-tomcat-9.0.31\webapps\examples]
+26-Sep-2023 00:12:28.040 資訊 [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\MyWeb\apache-tomcat-9.0.31\webapps\examples] has finished in [226] ms
+26-Sep-2023 00:12:28.040 資訊 [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\MyWeb\apache-tomcat-9.0.31\webapps\host-manager]
+26-Sep-2023 00:12:28.065 資訊 [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\MyWeb\apache-tomcat-9.0.31\webapps\host-manager] has finished in [25] ms
+26-Sep-2023 00:12:28.066 資訊 [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\MyWeb\apache-tomcat-9.0.31\webapps\manager]
+26-Sep-2023 00:12:28.088 資訊 [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\MyWeb\apache-tomcat-9.0.31\webapps\manager] has finished in [22] ms
+26-Sep-2023 00:12:28.089 資訊 [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\MyWeb\apache-tomcat-9.0.31\webapps\ROOT]
+26-Sep-2023 00:12:28.109 資訊 [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\MyWeb\apache-tomcat-9.0.31\webapps\ROOT] has finished in [21] ms
+26-Sep-2023 00:12:28.112 資訊 [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+26-Sep-2023 00:12:28.121 資訊 [main] org.apache.catalina.startup.Catalina.start Server startup in [537] milliseconds
+26-Sep-2023 00:16:33.825 嚴重 [main] org.apache.catalina.startup.Catalina.stopServer Could not contact [localhost:8005] (base port [8005] and offset [0]). Tomcat may not be running.
+26-Sep-2023 00:16:33.829 嚴重 [main] org.apache.catalina.startup.Catalina.stopServer Error stopping Catalina
+	java.net.ConnectException: Connection refused: connect
+		at java.net.DualStackPlainSocketImpl.connect0(Native Method)
+		at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:75)
+		at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:476)
+		at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:218)
+		at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:200)
+		at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:162)
+		at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:394)
+		at java.net.Socket.connect(Socket.java:606)
+		at java.net.Socket.connect(Socket.java:555)
+		at java.net.Socket.<init>(Socket.java:451)
+		at java.net.Socket.<init>(Socket.java:228)
+		at org.apache.catalina.startup.Catalina.stopServer(Catalina.java:513)
+		at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+		at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+		at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+		at java.lang.reflect.Method.invoke(Method.java:498)
+		at org.apache.catalina.startup.Bootstrap.stopServer(Bootstrap.java:389)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:479)
+26-Sep-2023 15:19:10.229 嚴重 [main] org.apache.catalina.startup.Catalina.stopServer Could not contact [localhost:8005] (base port [8005] and offset [0]). Tomcat may not be running.
+26-Sep-2023 15:19:10.242 嚴重 [main] org.apache.catalina.startup.Catalina.stopServer Error stopping Catalina
+	java.net.ConnectException: Connection refused: connect
+		at java.net.DualStackPlainSocketImpl.connect0(Native Method)
+		at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:75)
+		at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:476)
+		at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:218)
+		at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:200)
+		at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:162)
+		at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:394)
+		at java.net.Socket.connect(Socket.java:606)
+		at java.net.Socket.connect(Socket.java:555)
+		at java.net.Socket.<init>(Socket.java:451)
+		at java.net.Socket.<init>(Socket.java:228)
+		at org.apache.catalina.startup.Catalina.stopServer(Catalina.java:513)
+		at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+		at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+		at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+		at java.lang.reflect.Method.invoke(Method.java:498)
+		at org.apache.catalina.startup.Bootstrap.stopServer(Bootstrap.java:389)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:479)
+26-Sep-2023 22:48:17.185 嚴重 [main] org.apache.catalina.startup.Catalina.stopServer Could not contact [localhost:8005] (base port [8005] and offset [0]). Tomcat may not be running.
+26-Sep-2023 22:48:17.207 嚴重 [main] org.apache.catalina.startup.Catalina.stopServer Error stopping Catalina
+	java.net.ConnectException: Connection refused: connect
+		at java.net.DualStackPlainSocketImpl.connect0(Native Method)
+		at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:75)
+		at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:476)
+		at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:218)
+		at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:200)
+		at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:162)
+		at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:394)
+		at java.net.Socket.connect(Socket.java:606)
+		at java.net.Socket.connect(Socket.java:555)
+		at java.net.Socket.<init>(Socket.java:451)
+		at java.net.Socket.<init>(Socket.java:228)
+		at org.apache.catalina.startup.Catalina.stopServer(Catalina.java:513)
+		at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+		at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+		at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+		at java.lang.reflect.Method.invoke(Method.java:498)
+		at org.apache.catalina.startup.Bootstrap.stopServer(Bootstrap.java:389)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:479)

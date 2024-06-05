@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>分店地圖</title>
+
+    <link rel="stylesheet" href="./css/animate.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <script src="./js/bootstrap.js"></script>
+    <script src="./js/jquery-3.7.1.min.js"></script>
+    <link rel="stylesheet" href="./css/customer_service.css">
+    <script src="./js/customer_service.js"></script>
+    
+    <link href="./css/branchmap.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/Demo.css">
+    
+    <script>
+        function changeGoogleMap(branch_google_map_iframe_src){
+            document.getElementsByTagName('iframe')[0].src = branch_google_map_iframe_src
+            //document.querySelector('.tes').src = branch_google_map_iframe_src
+        }
+    </script>
+    <script>
+        let branch_name =['北市敦北店(222巷)','萬華寶興店',
+                            '楊梅四維店','竹北十興店',
+                            '台中學府店','台中東興店']
+        let branch_phone=['02-27120158','02-23395976',
+                            '03-4312158','03-6688158',
+                            '04-22292506','04-22600070',
+                        ] 
+        let branch_address=['105台北市松山區敦化北路222巷11號','108台北市萬華區寶興街109',
+                            '326桃園市楊梅區四維路208號','302新竹縣竹北市十興路308號',
+                            '402台中市南區學府路138號','402台中市南區東興路一段42號',
+                        ]
+        let branch_google_map_iframe_src=['https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d139583.399493325!2d121.4551151928612!3d25.02092591119713!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442ab179b31d7f1%3A0x8a195f9a06032576!2z6bql5ZGz55m7IOWMl-W4guaVpuWMl-W6lygyMjLlt7cp!5e0!3m2!1szh-TW!2stw!4v1693556590721!5m2!1szh-TW!2stw',
+                                    'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d231376.17605096646!2d121.33560925723425!3d25.025495199497!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442a9b46780682d%3A0xb3f50e800837236f!2z6bql5ZGz55m7IOiQrOiPr-WvtuiIiOW6lw!5e0!3m2!1szh-TW!2stw!4v1693556817094!5m2!1szh-TW!2stw',
+                                    'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d245289.00659279028!2d120.98147829123184!3d24.94804117220265!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346823160a2272eb%3A0x53bc55b5405f1a6a!2z6bql5ZGz55m7IOaliuaiheWbm-e2reW6lw!5e0!3m2!1szh-TW!2stw!4v1693556483403!5m2!1szh-TW!2stw',
+                                    'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d115869.0760189484!2d120.8996451555336!3d24.832798253087173!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346837fdafb0cc6d%3A0x3d7913ef4ea4af6e!2z6bql5ZGz55m7IOerueWMl-WNgeiIiOW6lw!5e0!3m2!1szh-TW!2stw!4v1693556869874!5m2!1szh-TW!2stw',
+                                    'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d233038.30933526962!2d120.51526534298864!3d24.128785000000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34693cf8993d990d%3A0x7496a77f5a717ee2!2z6bql5ZGz55m7Y2FmZSZicnVuY2gg5Y-w5Lit5a245bqc5bqX!5e0!3m2!1szh-TW!2stw!4v1693556989052!5m2!1szh-TW!2stw',
+                                    'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d58263.96376511435!2d120.61169973621159!3d24.119152408098838!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34693da4877b2ff3%3A0xddf672a9d61e1c88!2z6bql5ZGz55m7IOWPsOS4readseiIiOW6lw!5e0!3m2!1szh-TW!2stw!4v1693633679806!5m2!1szh-TW!2stw']
+
+    
+    </script>
+</head>
+<body>
+
+    <header>
+        <h1>神風餐廳-brunch  </h1>
+    </header>
+    
+    <nav>
+        <a href="index.html">首頁</a>
+        <a href="activity.html">特別活動</a>
+        <a href="menu.html">美味菜單</a>
+        <a href="branchmap.html">門市據點</a>
+        <a href="feedback.html">聯絡我們</a>
+        <button class="btnLogin-popup">登入 Login</button>
+    </nav>
+    
+    <div id="T_fixed_customer_service_img">
+        <img src="./picture/customer_service.png" alt="">
+    </div>
+    <div class="T_fixed_customer_service">
+        <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    請問是否可以使用悠遊卡／LINE PAY／街口支付?
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    目前所有門市皆可以使用悠遊卡／LINE PAY／街口支付
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    請問營業時間？
+                </button>
+              </h2>
+              <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    營業時間為　周一～周六　早上8:00 到 下午 1:00
+                    <br>
+                    另遇到國定假日，依網站公告為主
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    我想要對門市的菜色餐點與服務品質提供建議，該從何種管道反應?
+                </button>
+              </h2>
+              <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                <div class="accordion-body" >
+                    歡迎您使用客服專線0800-006-168，將有專人為您服務。
+                    <br>
+                    歡迎加入會員，使用會員內的餐點回饋。
+                </div>
+              </div>
+            </div>
+          </div>
+    </div>
+
+    <div class="all"> 
+        <div class="area_selection">
+            <h3>透過地區搜尋</h3>
+            <select name="city" id="">
+                <option value="0">選擇縣市</option>
+                <option value="1">台北市</option>
+                <option value="2">新北市</option>
+                <option value="3">桃園市</option>
+            </select>
+            <select name="area" id="">
+                <option value="0">選擇地區</option>
+                <option value="1">永和區</option>
+                <option value="2">新北市</option>
+                <option value="3">桃園市</option>
+            </select>
+             <button>搜尋</button>
+                
+            
+
+            
+        </div>
+       <table>
+           <tr>
+                <th>門市名稱</th>
+                <th>電話</th>
+                <th>地址</th>
+                <th>地圖</th>
+           </tr>
+           <script>
+                for(let i = 0 ; i < branch_google_map_iframe_src.length; i++ ){
+                    document.write(`<tr>
+                                    <td>${branch_name[i]}</td>
+                                    <td>${branch_phone[i]}</td>
+                                    <td>${branch_address[i]}</td>
+                                    <td><a href="#map" onclick="changeGoogleMap('${branch_google_map_iframe_src[i]}')">
+                                        <img  src="./picture/icon/location_on_FILL0_wght400_GRAD0_opsz24.svg" alt=""></a></td>
+                                    </tr>`)
+                }
+            </script>
+       </table>
+       <div  class="map_iframe">
+            <iframe  id="map"  src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d139583.399493325!2d121.4551151928612!3d25.02092591119713!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442ab179b31d7f1%3A0x8a195f9a06032576!2z6bql5ZGz55m7IOWMl-W4guaVpuWMl-W6lygyMjLlt7cp!5e0!3m2!1szh-TW!2stw!4v1693556590721!5m2!1szh-TW!2stw'
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+       </div> 
+    </div> 
+    <footer>
+        <p>&copy; 2023 神風早午餐店. All rights reserved.</p>
+    </footer>
+
+    <!-- 登入介面 -->
+    <div class="wrapper">
+        <span class="icon-close">
+            <ion-icon name="close"></ion-icon>
+        </span>
+
+        <div class="form-box login">
+            <h2>Login登入</h2>
+            <form action="#">
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="mail-outline"></ion-icon></span>
+                    <input type="email" required>
+                    <label>信箱Email</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="lock-closed-outline"></ion-icon></span>
+                    <input type="password" required>
+                    <label>密碼Password</label>
+                </div>
+                <div class="remember-forget">
+                    <label ><input type="checkbox">記住帳號</label>
+                    <a href="#">Forget Password?</a>
+                </div>
+                <button type="submit" class="btn">登入 Login</button>
+                <div class="login-register">
+                    <p>申請帳號
+                    <a 
+                    href="#"
+                    class="register-link">Register</a>
+                    </p>
+                    
+                </div>
+
+            </form>
+        </div>
+        <div class="form-box register">
+            <h2>Registration註冊</h2>
+            <form action="#">
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="person-add-outline"></ion-icon></span>
+                    <input type="text" required>
+                    <label>暱稱Username</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="mail-outline"></ion-icon></span>
+                    <input type="email" required>
+                    <label>信箱Email</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="lock-closed-outline"></ion-icon></span>
+                    <input type="password" required>
+                    <label>密碼Password</label>
+                </div>
+                <div class="remember-forget">
+                    <label ><input type="checkbox">I agree to the terms & conditions</label>
+                    
+                </div>
+                <button type="submit" class="btn">登入 Login</button>
+                <div class="login-register">
+                    <p>已有帳號
+                    <a 
+                    href="#"
+                    class="login-link">Login</a>
+                    </p>
+                    
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="./js/email.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    
+</body>
+</html>

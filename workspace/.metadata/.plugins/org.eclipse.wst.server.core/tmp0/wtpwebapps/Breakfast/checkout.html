@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./css/checkout.css" rel="stylesheet">
+    <title>結帳頁</title>
+</head>
+
+<body>
+    <header>
+        <h1>餐點結帳</h1>
+    </header>
+
+    <nav>
+        <a href="index.html">首頁</a>
+        <a href="#">特別活動</a>
+        <a href="menu.html">美味菜單</a>
+        <a href="branchmap.html">門市據點</a>
+        <a href="feedback.html">聯絡我們</a>
+
+        <button class="btnLogin-popup">登入 Login</button>
+    </nav>
+
+    <div class="container">
+        <div class="orderContent_TK">
+            <div class="title_TK">
+                點餐內容
+            </div>
+            <div class="upDivider_TK"></div>
+            <div class="list">
+                <div class="item">
+                    <!-- <img src="./menu_img/Bacon.png" alt=""> -->
+                    <div class="info">
+                        <div class="name">product1</div>
+                        <div class="price"> $99/1 一份</div>
+                    </div>
+                    <div class="quantity">1</div>
+                    <div class="returnPrice">$99</div>
+                </div>
+            </div>
+            <div class="downDivider_TK"></div>
+            <div class="checkout-button-container_TK">
+                <button id="clearButton1" class="checkout-button_TK"><a href="menu.html">繼續點餐</a></button>
+                <button id="confirmButton1" class="checkout-button_TK">確認送出</button>
+            </div>
+        </div>
+        <div class="paymentInformation_TK">
+            <div class="title_TK">
+                付款資訊      
+            </div>
+            <div class="upDivider_TK"></div>
+            <form id="paymentForm" action="提交回饋的URL" method="post">
+                <table>
+                    <tr>
+                        <td>電話：</td>
+                        <td><input type="text" name="phone" required></td>
+                    </tr>
+                    <tr>
+                        <td>密碼：</td>
+                        <td><input type="text" name="password" placeholder="會員必填"></td>
+                    </tr>
+                    <tr>
+                        <td>選擇優惠券：</td>
+                        <td>
+                            <select name="coupon">
+                                <option value="coupon0" selected>無</option>
+                                <option value="coupon1">優惠券 1</option>
+                                <option value="coupon2">優惠券 2</option>
+                                <option value="coupon3">優惠券 3</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>選擇餐點方式：</td>
+                        <td>
+                            <input type="radio" name="mealType" value="in">內用
+                            <input type="radio" name="mealType" value="out">外帶
+                            <input type="radio" name="mealType" value="delivery">外送
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>地址 : </td>
+                        <td><input type="text" name="address"></td>
+                    </tr>
+                    <tr>
+                        <td>選擇付款方式：</td>
+                        <td>
+                            <input type="radio" name="paymentMethod" value="creditCard">信用卡
+                            <input type="radio" name="paymentMethod" value="cash">現金
+                        </td>
+                    </tr>
+                </table>
+            </form>
+            <div class="downDivider_TK"></div>
+            <div class="checkout-button-container_TK">
+                <button id="clearButton2" class="checkout-button_TK">清除重填</button>
+                <button id="confirmButton2" class="checkout-button_TK">確認送出</button>
+            </div>
+        </div>
+        <div class="orderDetails_TK">
+            <div class="title_TK">
+                訂單詳情
+            </div>
+            <div class="upDivider_TK"></div>
+            <div class="list2">
+                <div class="item2">
+                    <!-- <img src="./menu_img/Bacon.png" alt=""> -->
+                    <div class="info2">
+                        <div class="name2">product1</div>
+                    </div>
+                    <div class="quantity2">1</div>
+                    <div class="returnPrice2">$99</div>
+                </div>
+            </div>
+            <div class="midDivider_TK"></div>
+            <div class="sum">
+                <div class="return">
+                    <div class="row">
+                        <div>優惠卷</div>
+                        <div class="coupon">無</div>
+                    </div>
+                    <div class="row">
+                        <div>總數</div>
+                        <div class="totalQuantity2">99</div>
+                    </div>
+                    <div class="row">
+                        <div>總金額</div>
+                        <div class="totalPrice2">9999</div>
+                    </div>
+                </div>
+                <div class="downDivider_TK"></div>
+                <div class="checkout-button-container_TK">
+                    <button id="clearButton3" class="checkout-button_TK">取消訂單</button>
+                    <button id="confirmButton3" class="checkout-button_TK">確認送出</button>
+                </div>
+            </div>
+        </div>
+
+
+        
+        <!-- <div class="checkoutLayout">
+            <div class="returnCart">                
+                    <a class="homepage"href="menu.html">
+                    繼續購物
+                    </a>                
+                <div class="list">
+                    <div class="item">
+                        <img src="./menu_img/Bacon.png" alt="">
+                        <div class="info">
+                            <div class="name">product1</div>
+                            <div class="price"> $99/1 一份</div>
+                        </div>
+                        <div class="quantity">1</div>
+                        <div class="returnPrice">$99</div>
+                    </div>
+                </div>
+            </div>
+            <div class="down">
+                <div class="return">
+                    <div class="row">
+                        <div>總數</div>
+                        <div class="totalQuantity">99</div>
+                    </div>
+                    <div class="row">
+                        <div>總消費</div>
+                        <div class="totalPrice">9999</div>
+                    </div>
+                </div>
+                <button class="buttonCheckout">
+                    結帳
+                </button>
+            </div>
+        </div> -->
+    </div>
+
+    <footer>
+        <p>&copy; 2023 神風早午餐店. All rights reserved.</p>
+    </footer>
+    <!--內容開始-->
+    <script src="./js/checkout.js"></script>
+
+    <!--登入介面-->
+    <div class="wrapper">
+        <span class="icon-close">
+            <ion-icon name="close"></ion-icon>
+        </span>
+
+        <div class="form-box login">
+            <h2>Login登入</h2>
+            <form action="#">
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="mail-outline"></ion-icon></span>
+                    <input type="email" required>
+                    <label>信箱Email</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="lock-closed-outline"></ion-icon></span>
+                    <input type="password" required>
+                    <label>密碼Password</label>
+                </div>
+                <div class="remember-forget">
+                    <label><input type="checkbox">記住帳號</label>
+                    <a href="#">Forget Password?</a>
+                </div>
+                <button type="submit" class="btn">登入 Login</button>
+                <div class="login-register">
+                    <p>申請帳號
+                        <a href="#" class="register-link">Register</a>
+                    </p>
+
+                </div>
+
+            </form>
+        </div>
+        <div class="form-box register">
+            <h2>Registration註冊</h2>
+            <form action="#">
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="person-add-outline"></ion-icon></span>
+                    <input type="text" required>
+                    <label>暱稱Username</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="mail-outline"></ion-icon></span>
+                    <input type="email" required>
+                    <label>信箱Email</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="lock-closed-outline"></ion-icon></span>
+                    <input type="password" required>
+                    <label>密碼Password</label>
+                </div>
+                <div class="remember-forget">
+                    <label><input type="checkbox">I agree to the terms & conditions</label>
+
+                </div>
+                <button type="submit" class="btn">登入 Login</button>
+                <div class="login-register">
+                    <p>已有帳號
+                        <a href="#" class="login-link">Login</a>
+                    </p>
+
+                </div>
+
+            </form>
+        </div>
+    </div>
+    <script src="./js/email.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <!--登入介面-->
+</body>
+
+</html>

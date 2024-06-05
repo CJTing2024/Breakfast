@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./css/member.css" rel="stylesheet">
+    <title>會員資料瀏覽</title>
+</head>
+
+<body>
+    <header>
+        <h1>會員資料</h1>
+    </header>
+
+    <nav>
+        <a href="index.html">首頁</a>
+        <a href="#">特別活動</a>
+        <a href="menu.html">美味菜單</a>
+        <a href="branchmap.html">門市據點</a>
+        <a href="feedback.html">聯絡我們</a>
+
+        <button class="btnLogin-popup">登入 Login</button>
+    </nav>
+
+    <!-- <div class="container">
+        <div class="orderContent_TK">
+            <div class="title_TK">
+                點餐內容
+            </div>
+            <div class="divider_TK"></div>
+            
+        </div>
+        <div class="paymentInformation_TK">
+            <div class="title_TK">
+                付款資訊      
+            </div>
+            <div class="divider_TK"></div>
+            
+        </div>
+        <div class="orderDetails_TK">
+            <div class="title_TK">
+                訂單詳情
+            </div>
+            <div class="divider_TK"></div>
+        </div> -->
+
+
+    <div class="container_ting">
+        <aside class="aside_ting">
+            <div class="side_bar_title_ting">
+                早餐殿
+            </div>
+            <div class="side_bar_ul_ting">
+                <ul>
+                    <li><a href="">會員資料</a></li>
+                    <li><a href="">我的優惠卷</a></li>
+                    <li><a href="">過往消費紀錄</a></li>
+                </ul>
+            </div>
+        </aside>
+        <main class="main_ting">
+            <h1>會員資料</h1>
+            <div class="main_div_ting">
+                <article>
+                    <form action="#" method="post">
+                        <p>帳號:<span>&nbsp;A123</span></p>
+                        <p>密碼:<span>&nbsp;123</span></p>
+
+                        <label for="name"><p>姓名:</p></label>
+                        <p><input type="text" name="name" id="name" value="" placeholder="請輸入姓名"></p>
+                        
+                        <label for="gender"><p>性別:</p></label>
+                        <p>
+                            <input type="radio" name="gender" value="male"> 男
+                            <input type="radio" name="gender" value="female"> 女
+                        </p>
+
+                        <label for="birthday">生日:</label>
+                        <input type="date" name="birthday" id="birthday">
+
+                        <label for="email"><p>Email:</p></label>
+                        <p><input type="email" name="email" id="email"></p>
+                        
+                        <label for="local_tel"><p>市話:</p></label>
+                        <p><input type="tel" name="local_tel" id="local_tel"></p>
+                        
+                        <label for="tel"><p>手機:</p></label>
+                        <p><input type="tel" name="tel" id="tel"></p>
+                        
+                        <fieldset class="fieldset_ting">
+                            <legend>地址</legend>
+                            <label for="city">縣市：</label>
+                            <select name="city" id="city">
+                                <option value="">請選擇縣市</option>
+                            </select>
+                            <label for="district">鄉鎮[市]區：</label>
+                            <select name="district" id="district">
+                                <option value="">請選擇地區</option>
+                            </select>
+                            <label for="adress"><p>路(街)名或鄉里名稱：</p></label>
+                            <p><input type="text" name="address" id="address"></p>
+                        </fieldset>
+                        <br>
+                        <input type="button" value="修改會員資料" id="modify_member_info">
+                        
+                        <input type="button" value="修改密碼" id="modify_member_passwd">
+                    </form>
+                </article>
+                <article class="atricle_points_ting">
+                    <section class="points_ting">
+                        <h2>點數</h2>
+                        <p class="points_p_ting">345點</p>
+                        <p><a href="./activity.html">兌換頁面</a></p>
+                    </section>
+                </article>
+            </div>
+        </main>
+
+
+
+
+
+        <!-- <div class="checkoutLayout">
+            <div class="returnCart">                
+                    <a class="homepage"href="menu.html">
+                    繼續購物
+                    </a>                
+                <div class="list">
+                    <div class="item">
+                        <img src="./menu_img/Bacon.png" alt="">
+                        <div class="info">
+                            <div class="name">product1</div>
+                            <div class="price"> $99/1 一份</div>
+                        </div>
+                        <div class="quantity">1</div>
+                        <div class="returnPrice">$99</div>
+                    </div>
+                </div>
+            </div>
+            <div class="down">
+                <div class="return">
+                    <div class="row">
+                        <div>總數</div>
+                        <div class="totalQuantity">99</div>
+                    </div>
+                    <div class="row">
+                        <div>總消費</div>
+                        <div class="totalPrice">9999</div>
+                    </div>
+                </div>
+                <button class="buttonCheckout">
+                    結帳
+                </button>
+            </div>
+        </div> -->
+    </div>
+
+    <footer>
+        <p>&copy; 2023 神風早午餐店. All rights reserved.</p>
+    </footer>
+    <!--內容開始-->
+
+
+    <!--登入介面-->
+    <div class="wrapper">
+        <span class="icon-close">
+            <ion-icon name="close"></ion-icon>
+        </span>
+
+        <div class="form-box login">
+            <h2>Login登入</h2>
+            <form action="#">
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="mail-outline"></ion-icon></span>
+                    <input type="email" required>
+                    <label>信箱Email</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="lock-closed-outline"></ion-icon></span>
+                    <input type="password" required>
+                    <label>密碼Password</label>
+                </div>
+                <div class="remember-forget">
+                    <label><input type="checkbox">記住帳號</label>
+                    <a href="#">Forget Password?</a>
+                </div>
+                <button type="submit" class="btn">登入 Login</button>
+                <div class="login-register">
+                    <p>申請帳號
+                        <a href="#" class="register-link">Register</a>
+                    </p>
+
+                </div>
+
+            </form>
+        </div>
+        <div class="form-box register">
+            <h2>Registration註冊</h2>
+            <form action="#">
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="person-add-outline"></ion-icon></span>
+                    <input type="text" required>
+                    <label>暱稱Username</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="mail-outline"></ion-icon></span>
+                    <input type="email" required>
+                    <label>信箱Email</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="lock-closed-outline"></ion-icon></span>
+                    <input type="password" required>
+                    <label>密碼Password</label>
+                </div>
+                <div class="remember-forget">
+                    <label><input type="checkbox">I agree to the terms & conditions</label>
+
+                </div>
+                <button type="submit" class="btn">登入 Login</button>
+                <div class="login-register">
+                    <p>已有帳號
+                        <a href="#" class="login-link">Login</a>
+                    </p>
+                </div>
+
+            </form>
+        </div>
+    </div>
+     
+    <script src="./js/member.js"></script>
+    <script src="./js/email.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <!--登入介面-->
+</body>
+
+</html>

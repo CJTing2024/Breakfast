@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;implicit_request5.jsp&apos; to &apos;WebContent&apos;&#x0D;&#x0A;- Original project: &apos;JSP04_Lab&apos;&#x0D;&#x0A;- Destination element: &apos;WebContent&apos;&#x0D;&#x0A;- Original element: &apos;implicit_request5.jsp&apos;" description="Copy file" element1="WebContent/implicit_request5.jsp" files="1" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1698302542863" target="/SQLTest/WebContent" units="0" version="1.0"/>
+</session>

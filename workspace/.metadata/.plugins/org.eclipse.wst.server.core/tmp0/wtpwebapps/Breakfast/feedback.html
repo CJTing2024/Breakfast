@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--<link href="feedbackstyle.css" rel="stylesheet">-->
+    <link rel="stylesheet" href="./css/feedback.css">
+    <link rel="stylesheet" href="./css/slide.css">
+    <title>顧客回饋</title>
+</head>
+
+<body>
+
+
+    <header>
+        <h1>歡迎回來！</h1>
+        <p>我們很高興您選擇了我們的餐廳。<br>
+            請告訴我們您的回饋，<br>
+            以便我們不斷改進服務。</p>
+    </header>
+
+    <nav>
+        <a href="index.html">首頁</a>
+        <a href="activity.html">特別活動</a>
+        <a href="menu.html">美味菜單</a>
+        <a href="branchmap.html">門市據點</a>
+        <a href="feedback.html">聯絡我們</a>
+        <button class="btnLogin-popup">登入 Login</button>
+    </nav>
+
+
+
+    <div class="container">
+        <div class="advertisement left">
+            <!-- 左側廣告內容 -->
+            <img src="left-ad-image.jpg" alt="左側廣告">
+        </div>
+        <form class="heyform" action="提交回饋的URL" method="POST">
+            <label for="name">您的姓名：</label>
+            <input class="heyinput" type="text" id="name" name="name" required><br>
+            <label for="email">您的電子郵件：</label>
+            <input class="heyinput" type="email" id="email" name="email" required><br>
+            <label for="food-rating">餐點滿意度：</label>
+            <select id="food-rating" name="food-rating" required>
+                <option value="5">5 - 非常滿意</option>
+                <option value="4">4 - 滿意</option>
+                <option value="3">3 - 一般</option>
+                <option value="2">2 - 不滿意</option>
+                <option value="1">1 - 非常不滿意</option>
+            </select><br>
+
+            <label for="service-rating">服務滿意度：</label>
+            <select id="service-rating" name="service-rating" required>
+                <option value="5">5 - 非常滿意</option>
+                <option value="4">4 - 滿意</option>
+                <option value="3">3 - 一般</option>
+                <option value="2">2 - 不滿意</option>
+                <option value="1">1 - 非常不滿意</option>
+            </select><br>
+
+            <label for="ambiance-rating">環境滿意度：</label>
+            <select id="ambiance-rating" name="ambiance-rating" required>
+                <option value="5">5 - 非常滿意</option>
+                <option value="4">4 - 滿意</option>
+                <option value="3">3 - 一般</option>
+                <option value="2">2 - 不滿意</option>
+                <option value="1">1 - 非常不滿意</option>
+            </select><br>
+
+            <label for="overall-rating">整體服務：</label>
+            <select id="overall-rating" name="overall-rating" required>
+                <option value="5">5 - 非常滿意</option>
+                <option value="4">4 - 滿意</option>
+                <option value="3">3 - 一般</option>
+                <option value="2">2 - 不滿意</option>
+                <option value="1">1 - 非常不滿意</option>
+            </select><br>
+
+            <label for="feedback">回饋意見：(非必填)</label><br>
+            <textarea id="feedback" name="feedback" rows="4" cols="50"></textarea><br>
+            <div class="button_container">
+                <input id="heyinput1" type="submit" value="提交回饋">
+                <button type="button" id="clear-button">清除</button>
+            </div>
+        </form>
+        <div class="advertisement right">
+            <!-- slide start -->
+            <div id="Home_slider">
+                <div class="slider"></div>
+                <div class="nav"></div>
+                <div data-target='right' class="side-nav side-nav--right"></div>
+                <div data-target='left' class="side-nav side-nav--left"></div>
+            </div>
+            <!-- slide end -->
+           
+        </div>
+    </div>
+
+
+    <footer>
+        <p>謝謝您的回饋！我們期待再次為您服務。</p>
+        <p>&copy; 2023 神風早午餐店. All rights reserved.</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
+    <script src="./js/feedback.js"></script>
+    <script src="./js/slide.js"></script>
+
+    <!--登入介面-->
+    <div class="wrapper">
+        <span class="icon-close">
+            <ion-icon name="close"></ion-icon>
+        </span>
+
+        <div class="form-box login">
+            <h2>Login登入</h2>
+            <form action="#">
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="mail-outline"></ion-icon></span>
+                    <input type="email" required>
+                    <label>信箱Email</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="lock-closed-outline"></ion-icon></span>
+                    <input type="password" required>
+                    <label>密碼Password</label>
+                </div>
+                <div class="remember-forget">
+                    <label><input type="checkbox">記住帳號</label>
+                    <a href="#">Forget Password?</a>
+                </div>
+                <button type="submit" class="btn">登入 Login</button>
+                <div class="login-register">
+                    <p>申請帳號
+                        <a href="#" class="register-link">Register</a>
+                    </p>
+
+                </div>
+
+            </form>
+        </div>
+        <div class="form-box register">
+            <h2>Registration註冊</h2>
+            <form action="#">
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="person-add-outline"></ion-icon></span>
+                    <input type="text" required>
+                    <label>暱稱Username</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="mail-outline"></ion-icon></span>
+                    <input type="email" required>
+                    <label>信箱Email</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="lock-closed-outline"></ion-icon></span>
+                    <input type="password" required>
+                    <label>密碼Password</label>
+                </div>
+                <div class="remember-forget">
+                    <label><input type="checkbox">I agree to the terms & conditions</label>
+
+                </div>
+                <button type="submit" class="btn">登入 Login</button>
+                <div class="login-register">
+                    <p>已有帳號
+                        <a href="#" class="login-link">Login</a>
+                    </p>
+
+                </div>
+
+            </form>
+        </div>
+    </div>
+    <script src="./js/email.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <!--登入介面-->
+</body>
+
+</html>

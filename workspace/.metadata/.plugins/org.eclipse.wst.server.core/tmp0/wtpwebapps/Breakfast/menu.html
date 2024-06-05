@@ -1,0 +1,258 @@
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./css/menustyle.css" rel="stylesheet">
+    <link href="./css/header.css" rel="stylesheet">
+    <title>美味餐點</title>
+</head>
+
+<body>
+<!-- right_cart start -->
+    <div class="andy_right_cart">
+        <h2>購物車預覽</h2>
+        <div class="andy_cart_listCart">
+            <div class="andy_cart_item">
+                <img src="./menu_img/Ham.png">
+                <div class="andy_cart_item_content">
+                    <div class="cart_item_name">
+                        product name
+                    </div>
+                    <div class="cart_item_price">
+                        $5.99/1 product 
+                    </div>
+                </div>
+                <div class="andy_cart_item_quantity">
+                        <button>-</button>
+                        <span class="value">3</span>
+                        <button>+</button>
+                </div>
+            </div>
+        </div>
+        <div class="andy_bottons">
+            <div class="andy_close">繼續購物</div>
+            <div class="andy_checkout">
+                <a href="checkout.html">進入購物車</a>
+            </div>
+        </div>
+    </div>    
+ <!-- right_cart finish -->
+    <div class="andy_total">
+        <header>
+            <h1>美味餐點區 </h1>
+        </header>
+        <nav>
+            <a href="index.html">首頁</a>
+            <a href="activity.html">特別活動</a>
+            <a href="menu.html">美味菜單</a>
+            <a href="branchmap.html">門市據點</a>
+            <a href="feedback.html">聯絡我們</a>
+            <div class="andy_iconCart">            
+                <botton href="cart.html" class="andy_cart"><ion-icon name="cart-outline"></ion-icon>購物車<div class="andy_totalQuantity">0</div></botton>            
+            </div> 
+            <button class="btnLogin-popup">登入 Login</button>
+        </nav> 
+        
+
+        <div class="container">
+            <div id="window2" class="overlay">                
+                <div class="colLeft">
+                    <div class="title">
+                        <div class="listName">霸氣早晨炫風早餐</div>
+                        <div class="en">Toast with Ham</div>
+                    </div>
+                    <div class="image">
+                        <img src="./menu_img/Ham.png">
+                    </div>  
+                </div>
+                <div class="colMiddle">
+                    <table>
+                        <tr>
+                            <td colspan="2">營養分析</td>
+                        </tr>
+                        <tr>
+                            <td>熱量  ( Kcal )</td>
+                            <td>352</td>
+                        </tr>
+                        <tr>
+                            <td>蛋白質  ( g )</td>
+                            <td>13</td>
+                        </tr>
+                        <tr>
+                            <td>脂肪  ( g )</td>
+                            <td>18</td>
+                        </tr>
+                        <tr>
+                            <td>飽和脂肪  ( g )</td>
+                            <td>6.9</td>
+                        </tr>
+                        <tr>
+                            <td>反式脂肪  ( g )</td>
+                            <td>0.1</td>
+                        </tr>
+                        <tr>
+                            <td>碳水化合物  ( g )</td>
+                            <td>35</td>
+                        </tr>
+                        <tr>
+                            <td>糖  ( g )</td>
+                            <td>5</td>
+                        </tr>
+                        <tr>
+                            <td>鈉  ( mg )</td>
+                            <td>535</td>
+                        </tr>
+                    </table>
+                </div>                    
+                <div class="colRight">
+                    <div class="contents">
+                        <div class="tabsContent">                            
+                            <p>最簡單的原味白吐司，口感柔軟有彈性，經微烤後的香氣，夾入富有嚼勁的火腿肉，Q滑又鮮嫩，讓人不自覺一口接一口！</p>
+                            <p>價格：$5.99</p>
+                            <div class="PDContent2">＊產品圖片僅供參考，實際產品以各門市販售為準。</div>                                                      
+                                     
+                        </div>
+                        <button class="addCar">加入購物車</button>  
+                    </div>
+                </div>                
+            </div>
+
+               
+
+
+        </div>
+
+        <!-- popup start -->
+        
+
+        <!-- <div id="window3" class="overlay">
+            <div class="popup">
+                <h2>視窗3內容</h2>
+                <p>這是視窗3的內容。</p>
+                <button class="close_button" id="closeButton"></button>
+            </div>
+        </div>
+        <div id="window4" class="overlay">
+            <div class="popup">
+                <h2>視窗4內容</h2>
+                <p>這是視窗4的內容。</p>
+                <button class="close_button" id="closeButton"></button>
+            </div>
+        </div>
+        <div id="window5" class="overlay">
+            <div class="popup">
+                <h2>視窗5內容</h2>
+                <p>這是視窗5的內容。</p>
+                <button class="close_button" id="closeButton"></button>
+            </div>
+        </div>
+        <div id="window6" class="overlay">
+            <div class="popup">
+                <h2>視窗6內容</h2>
+                <p>這是視窗5的內容。</p>
+                <button class="close_button" id="closeButton"></button>
+            </div>
+        </div>
+        <div id="window7" class="overlay">
+            <div class="popup">
+                <h2>視窗7內容</h2>
+                <p>這是視窗5的內容。</p>
+                <button class="close_button" id="closeButton"></button>
+            </div>
+        </div>
+        <div id="window8" class="overlay">
+            <div class="popup">
+                <h2>視窗8內容</h2>
+                <p>這是視窗5的內容。</p>
+                <button class="close_button" id="closeButton"></button>
+            </div>
+        </div> -->
+
+        <footer>
+            <p>&copy; 2023 神風早午餐店. All rights reserved.</p>
+        </footer>
+       
+
+
+        <!--登入介面-->
+        <div class="wrapper">
+            <span class="icon-close">
+                <ion-icon name="close"></ion-icon>
+            </span>
+
+            <div class="form-box login">
+                <h2>Login登入</h2>
+                <form action="#">
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="mail-outline"></ion-icon></span>
+                        <input type="email" required>
+                        <label>信箱Email</label>
+                    </div>
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="lock-closed-outline"></ion-icon></span>
+                        <input type="password" required>
+                        <label>密碼Password</label>
+                    </div>
+                    <div class="remember-forget">
+                        <label><input type="checkbox">記住帳號</label>
+                        <a href="#">Forget Password?</a>
+                    </div>
+                    <button type="submit" class="btn">登入 Login</button>
+                    <div class="login-register">
+                        <p>申請帳號
+                            <a href="#" class="register-link">Register</a>
+                        </p>
+
+                    </div>
+
+                </form>
+            </div>
+            <div class="form-box register">
+                <h2>Registration註冊</h2>
+                <form action="#">
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="person-add-outline"></ion-icon></span>
+                        <input type="text" required>
+                        <label>暱稱Username</label>
+                    </div>
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="mail-outline"></ion-icon></span>
+                        <input type="email" required>
+                        <label>信箱Email</label>
+                    </div>
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="lock-closed-outline"></ion-icon></span>
+                        <input type="password" required>
+                        <label>密碼Password</label>
+                    </div>
+                    <div class="remember-forget">
+                        <label><input type="checkbox">I agree to the terms & conditions</label>
+
+                    </div>
+                    <button type="submit" class="btn">登入 Login</button>
+                    <div class="login-register">
+                        <p>已有帳號
+                            <a href="#" class="login-link">Login</a>
+                        </p>
+
+                    </div>
+
+                </form>
+            </div>
+        </div>
+
+        <!--登入介面-->
+    </div>
+    <!-- cart script start -->
+    <script src="./js/menucart.js"></script>
+    <!-- cart script finish -->    
+    <!-- cart script finish  <script src="./js/menupop.js"></script> <script src="./js/menu.js"></script> -->
+    
+    <script src="./js/email.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
